@@ -1,1 +1,10 @@
 size(600,600);
+fill(255, 0, 0, 100);
+ellipse (200, 200, 200, 200);
+fill(20, 255, 0, 100);
+ellipse (300, 200, 200, 200);
+fill(0, 249, 255, 100);
+ellipse (250, 250, 200, 200);
+fill(3, 3, 3, 255);
+textSize(25);
+text("This is my Venn Diagram. :D", 25, 50);
