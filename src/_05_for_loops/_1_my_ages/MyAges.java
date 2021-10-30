@@ -1,5 +1,7 @@
 package _05_for_loops._1_my_ages;
 
+import javax.swing.JOptionPane;
+
 public class MyAges {
 	public static void main(String[] args) {
 		
@@ -11,6 +13,12 @@ public class MyAges {
 		
 		// Change the value of yourCurrentAge to match your age
 		int yourCurrentAge = 0;
+		String yourAgeString = JOptionPane.showInputDialog("Hello, How Old Are You?: ");
+		yourCurrentAge = Integer.parseInt(yourAgeString);
+		while (yourCurrentAge > 0 ) {
+			JOptionPane.showMessageDialog(null, "Your age is" + yourCurrentAge + " years. Congratulations, I'm suprised you survived this long. >:p" );
+		}
+		
 				
 		
 		//  WHILE LOOP. Start a while loop to repeat while age <= yourCurrentAge
