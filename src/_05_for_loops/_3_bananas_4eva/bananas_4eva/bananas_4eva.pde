@@ -1,15 +1,28 @@
-banana = bananas_4eva.pde
-int x = 400; 
-int y = 600;
- 
+String banana = "banana";
+int x = 0; 
+int y = 0;
+PImage bananaPic;
 
 void setup() {
-    size(800, 800);
+    bananaPic = loadImage("Banana.png");
+    size(1000, 1000);
     noStroke();
+    
 }
-
+int banana_count = 0;
 void draw() {
-    print (bananas)
-    x -= 1;
-    y -= 1;
+while (banana_count <= 50) {    
+    image(bananaPic, x, y);
+    x += 25;
+    y += 25;
+    banana_count++; 
+}
+int x = 1000;
+int y = 1000;
+while (banana_count <= 50) {    
+    image(bananaPic, x, y);
+    x -= 25;
+    y -= 25;
+    banana_count++; 
+}
 }

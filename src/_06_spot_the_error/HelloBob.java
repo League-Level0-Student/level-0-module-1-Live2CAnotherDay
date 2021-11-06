@@ -3,6 +3,8 @@ package _06_spot_the_error;
 import javax.swing.JOptionPane;
 
 public class HelloBob {
+	
+	
 public static void main(String[] args) {
 	
 	// This program is supposed to pop up    Hello Bob   only if the user enters the name   Bob
@@ -11,10 +13,13 @@ public static void main(String[] args) {
 	
 	String name = JOptionPane.showInputDialog("What is your name?");
 	
-	if (name == "Bob") {
+	if (name.equalsIgnoreCase("Bob")) {
 		JOptionPane.showMessageDialog(null, "Hello Bob");
-	} else {
+	} 
+	else {
 		JOptionPane.showMessageDialog(null, "You're not Bob!!!");
 	}
+
+
 }
 }
